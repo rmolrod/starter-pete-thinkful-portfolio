@@ -6,6 +6,7 @@ body {
   color: #003049;
   font-family: "Source Sans Pro", Tahoma, Geneva, Verdana, sans-serif;
   padding: 40px;
+  font-size: 14px;
 }
 
 /* Headings */
@@ -14,11 +15,17 @@ h2,
 h3 {
   font-family: "Playfair Display", Times, serif;
   text-align: center;
+  
 }
 
 /* Header */
 header {
-  text-align: center;
+  
+display: flex;
+justify-content: center;
+align-items: center;
+  flex-wrap: nowrap;
+
 }
 
 /* Containers */
@@ -92,47 +99,49 @@ nav a {
   object-fit: cover;
   border: 2px solid #618090;
   border-radius: 50%; 
+ 
 
 }
+.image-row {
+  display: flex;/* Distribute space between sections */
+  gap: 10px; /* Space between the sections */
+  flex-wrap: wrap;
+   /* Allow wrapping on smaller screens */
+}
 
-.port {
-  margin: 90px;
+/* Style each section */
+.image-row section {
+  width: 30%; /* Set a width for each section */
+  box-sizing: border-box; /* Include padding and border in width */
+  padding: 0px;
+  
+   /* Optional padding for spacing */
+}
+
+/* Style the images inside each section */
+.image-row img {
+  width: 100%; /* Make the images take full width of the section */
+  height: auto;
+  display: block; /* Ensure there are no extra spaces below the image */
+  margin-bottom: 10px; /* Optional margin for spacing between the image and text */
+}
+
+#contact {
+  margin: 0 0px;
+  padding: 50px;
+  text-align: justify;
+  padding-left: 250px;
 
   
-
-}
-
-#portfolio {
-
   
-
 }
-
-#portfolio , img{
-  display: flex;
-  justify-content: center;
-  height: 180px;
-  width: auto;
-  align-items: center;
-  margin: auto;
-
-}
-
-#portfolio, p {
-  text-align: center;
-  margin: 50px auto;
-
-}
-
-
-
-
-
 
 /* Footer */
 footer {
   text-align: center;
 }
+
+
 
 /* Other page elements */
 hr {
