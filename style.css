@@ -28,6 +28,34 @@ div {
   width: 600px;
 }
 
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+}
+
+.intro ul {
+  text-align: justify ;
+  margin-left: 20px;
+  
+  
+}
+
+.intro p {
+  margin: 0 0px;
+  padding: 0 20px;
+  text-align: left
+}
+
+.bio p {
+  text-align: justify;
+  margin: 0 0px;
+}
+
+
 article {
   padding: 50px 0;
 }
@@ -55,17 +83,51 @@ nav a {
   padding-left: 20px;
 }
 
-/* Images */
-img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+
+
+
+.intro img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 2px solid #618090;
+  border-radius: 50%; 
+
 }
 
-.image-circle {
-  border: 2px solid #003049;
-  border-radius: 50%;
+.port {
+  margin: 90px;
+
+  
+
 }
+
+#portfolio {
+
+  
+
+}
+
+#portfolio , img{
+  display: flex;
+  justify-content: center;
+  height: 180px;
+  width: auto;
+  align-items: center;
+  margin: auto;
+
+}
+
+#portfolio, p {
+  text-align: center;
+  margin: 50px auto;
+
+}
+
+
+
+
+
 
 /* Footer */
 footer {
